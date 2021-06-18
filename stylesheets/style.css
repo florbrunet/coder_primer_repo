@@ -1,0 +1,495 @@
+/***********************HEADER**********************************/
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: 'Bebas Neue';
+    overflow-x: hidden;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background-color: #222222;
+}
+
+.headerLinks {
+    flex: 3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.headerLinks a {
+    font-size: 22px;
+    text-decoration: none;
+    color: #FEFCFD;
+    text-transform: uppercase;
+}
+
+.headerLinks a:hover {
+    color: #4BC6B9
+}
+
+.headerLinks a:focus{
+    color:#4BC6B9
+}
+
+.searchContainer {
+    flex: 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchBox {
+    width: 80%;
+    height: 40%;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.searchBox:focus {
+    outline: none;
+    box-shadow: 0 0 10px 3px #4BC6B9;
+}
+
+
+.logInContainer {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logInButton {
+    padding: 6px 40px 7px;
+    background-color: #4BC6B9;
+    color: #FEFCFD;
+    border: none;
+    border-radius: 24px;
+    font-family: 'Bebas Neue';
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.logInButton:hover {
+    background-color: #4F759B;
+}
+
+.RegisContainer {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.RegisButton {
+    padding: 6px 40px 7px;
+    background-color: #4BC6B9;
+    color: #FEFCFD;
+    border: none;
+    border-radius: 24px;
+    font-family: 'Bebas Neue';
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.RegisButton:hover {
+    background-color: #4F759B;
+}
+
+.navBar {
+    position: fixed;
+    top: 80px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    padding: 0 250px;
+    background-color: #333333;
+}
+
+.navBar a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #FEFCFD;
+    text-transform: uppercase;
+}
+
+/***********************contenedor_Portada**********************************/
+
+.contenedorPortada{
+    background: rgb(14, 161, 219);
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    display: block;
+    margin-top: 1%; 
+    padding: 15%; 
+    
+}
+
+
+/*********************BODY eventos del mes********************************/
+
+.containerMes {
+    margin: auto;
+    max-width: 95%;
+}
+
+.section1{
+    background: grey;
+    border: 1px solid #e0e0e0; 
+    display: flex;
+    justify-content: space-between;
+}
+
+.section2{
+    background: grey;
+    border: 1px solid #e0e0e0; 
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 15px;
+    
+}
+
+.containerMes_box{
+    width: 23%;  
+    height: 200px; 
+    margin-bottom: 10px;
+    border-radius: 5px;
+    
+    background: lightgray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    
+}
+article{
+    width: 100%; 
+    height: 70px;  
+    margin-bottom: 8px;   
+    border-radius: 10px;
+    background: lightgray;
+    display: flex;
+    flex-direction: row;  
+    justify-content: space-between;
+    padding-left: 10px;      
+    
+}
+
+/*revisar*/
+.containerMes_box a img{
+    width: 120%;
+    height: 150px;
+        
+}
+
+.containerMes_box a:hover{  
+    transform:scale(1.3,1.3);
+    transition: all 2s;
+        
+}
+
+
+
+/***********************contenedor_banner de abajo**********************************/
+
+.contenedorPortada_bottom{
+    background: rgb(14, 161, 219);
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    display: block;
+    margin-top: 1%; 
+    padding: 5%; 
+    
+}
+
+.contenedorPortada_bottom{
+    background-image: linear-gradient(to left, rgb(68, 0, 255), rgb(0, 255, 200));
+}
+
+
+/*********************MenuViajes/Musica/yTecnologia *********************************/
+
+#cajaGrid{
+    display: grid;
+    grid-template-columns: 18% 30% 50%;
+    grid-template-rows: 130px 50px 230px 230px 230px 100px;
+    grid-template-areas:"area2 area2 area2"
+                        "area1 area10 area10"
+                        "area1 area3 area4"
+                        "area1 area5 area6"
+                        "area1 area7 area8"
+                        "area1 area9 area9";
+
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+#cajaUno{
+    background: #222222;    
+    grid-area: area1;
+    width: 80%;
+
+}
+
+#cajaDos{
+    background: blue;    
+    grid-area: area2;
+    width: 14.5%;      
+    
+}
+
+#cajaTres{
+    background: purple;
+    grid-area: area3;
+    width: 90%;
+    height: 60%;
+    justify-self: right;
+    align-self: center; 
+    overflow: hidden;      
+}
+
+.fecha{
+    display: flex;
+    justify-content: center; 
+}
+
+#cajaCuatro{ 
+    background: pink;
+    width: 90%;
+    height: 60%;
+    justify-self: right;
+    align-self: center; 
+    grid-area: area5;     
+}
+
+#cajaCinco{  
+    background: red;     
+    grid-area: area7; 
+    width: 90%;
+    height: 60%;
+    justify-self: right;
+    align-self: center;  
+    
+}
+
+#cajaSeis{
+    background: red;   
+    grid-area: area4; 
+  
+    
+}
+
+#cajaSiete{
+    background: green; 
+    grid-area: area6;   
+}
+
+#cajaOcho{
+    background: lightgray;   
+    grid-area: area8;
+}
+
+#cajaNueve{
+    background: orange;    
+    grid-area: area9;
+    width: 100%;
+}
+
+#cajaDiez{  
+    grid-area: area10;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.headerM {
+    display: flex;
+    margin: 0;
+    font-family: 'Bebas Neue';
+    overflow-x: hidden;
+}
+
+.headerM {
+    position: fixed;
+    top: 0;
+    display: flex;
+    width: 100%;
+    height: 125px;
+    background-color: #222222;
+    
+}
+
+
+.headerLinksM {
+    flex: 3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.headerLinksM a {
+    font-size: 22px;
+    text-decoration: none;
+    color: #FEFCFD;
+    text-transform: uppercase;
+}
+
+.headerLinksM a:hover {
+    color: #4BC6B9
+}
+
+.headerLinksM a:focus{
+    color:#4BC6B9
+}
+
+.searchContainerM {
+    flex: 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchBox {
+    width: 60%;
+    height: 30%;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.searchBox:focus {
+    outline: none;
+    box-shadow: 0 0 10px 3px #4BC6B9;
+}
+
+.logInContainerM {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logInButton {
+    padding: 6px 40px 7px;
+    background-color: #4BC6B9;
+    color: #FEFCFD;
+    border: none;
+    border-radius: 24px;
+    font-family: 'Bebas Neue';
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.logInButton:hover {
+    background-color: #4F759B;
+}
+
+.navBarM {
+    position: fixed;
+    padding-top: 100px;
+    padding-left: 40px;
+    flex-direction: column;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    height: 400px;
+    align-items: center;       
+    background-color: #222222;
+}
+
+.navBarM a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #FEFCFD;
+    text-transform: uppercase;
+}
+
+img {
+    height: 100%;
+    width: 70%;
+   
+}
+
+img:hover{
+    transform: translate(20px, 10px);
+}
+
+
+/*********************END MENU viajes/techno y musica *********************************/
+
+/*********************CONTACTO*********************************/
+
+body{
+    background-color: lightgray
+}
+
+.contacto {   
+    margin-top: 10%;    
+    padding-left: 30%;   
+}
+
+form {
+    height: 180%;   
+     
+}
+
+
+/*********************END CONTACTO*********************************/
+
+
+
+/*********************FOOTER    *********************************/
+
+.main-footer{
+    background-color: #222222;
+    padding: 20px;
+}
+
+.containerFooter a {
+    font-size: 10px;
+    text-decoration: none;
+    color: #FEFCFD;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.containerFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+
+.containerFooter_menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    
+    
+}
+
+.containerFooter_menu a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #222222;
+       
+}
+
+
+/*********************END FOOTER    *********************************/
+
+
