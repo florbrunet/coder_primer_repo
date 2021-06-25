@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    position: fixed;
+    /*position: fixed;*/
     top: 0;
     display: flex;
     width: 100%;
@@ -104,7 +104,7 @@ header {
 }
 
 .navBar {
-    position: fixed;
+    /*position: fixed;*/
     top: 80px;
     box-sizing: border-box;
     display: flex;
@@ -126,13 +126,17 @@ header {
 /***********************contenedor_Portada**********************************/
 
 .contenedorPortada{
-    background: rgb(14, 161, 219);
+    /*background: rgb(14, 161, 219);*/
     border: 1px solid #e0e0e0;
     border-radius: 5px;
-    display: block;
-    margin-top: 1%; 
-    padding: 15%; 
-    
+    display: block;     
+    padding: 2%;      
+}
+
+img.d-block.w-100{
+
+    max-height: 450px;
+
 }
 
 
@@ -151,11 +155,11 @@ header {
 }
 
 .section2{
-    background: grey;
+    
     border: 1px solid #e0e0e0; 
     display: flex;
     justify-content: space-between;
-    padding-left: 10px;
+    padding-left: 20px;
     padding-right: 15px;
     
 }
@@ -188,8 +192,8 @@ article{
 
 /*revisar*/
 .containerMes_box a img{
-    width: 120%;
-    height: 150px;
+    width: 100%;
+    height: 200px;
         
 }
 
@@ -199,23 +203,24 @@ article{
         
 }
 
-
-
 /***********************contenedor_banner de abajo**********************************/
 
-.contenedorPortada_bottom{
+/*.contenedorPortada_bottom{
     background: rgb(14, 161, 219);
     border: 1px solid #e0e0e0;
     border-radius: 5px;
     display: block;
     margin-top: 1%; 
-    padding: 5%; 
+    padding: 3%; 
     
 }
-
+*/
 .contenedorPortada_bottom{
     background-image: linear-gradient(to left, rgb(68, 0, 255), rgb(0, 255, 200));
 }
+
+
+
 
 
 /*********************MenuViajes/Musica/yTecnologia *********************************/
@@ -418,8 +423,7 @@ article{
 
 img {
     height: 100%;
-    width: 70%;
-   
+    width: 70%;   
 }
 
 img:hover{
@@ -442,7 +446,6 @@ body{
 
 form {
     height: 180%;   
-     
 }
 
 
@@ -486,10 +489,115 @@ form {
     text-transform: uppercase;
     font-size: 15px;
     color: #222222;
-       
+
 }
 
 
 /*********************END FOOTER    *********************************/
 
+/*********************OFERTAS *********************************/
+
+.products-wrapper {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.products-title {
+    font-size: 2.4em;
+    font-weight: 400;
+    color: grey;
+}
+
+
+.product-box {
+    background-color: #ffffff;
+    border-radius: 5px;   
+    overflow: hidden;
+    transition: 300ms;
+    margin: 20px 0;}
+
+
+.product-box a {
+    display: block;
+    text-decoration: none;
+}
+
+.product-box_image {
+    border-bottom: 1px solid lightgray;
+}
+
+.product-box_data {
+    padding: 8px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+.product-box_data h3 {
+    font-size: 1.8em;
+    font-weight: 300;
+    margin: 0;
+    font-family: sans-serif;
+    
+}
+
+.product-box_data span {
+    font-size: 1.3em;
+    font-weight: 200;
+    color: green;
+    margin: 0 0 0 10px;
+    font-family: sans-serif;
+}
+
+.product-box_data p {
+    font-size: 1em;
+    width: 100%;
+    color: black;
+    margin: 0;
+    height: 0;
+    transition: 300ms;
+    overflow: hidden;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.product-box_data i {
+    color: green;
+    font-size: 1.5em;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    border: solid 1px;
+    border-radius: 50%;
+    position: absolute;
+    top: -15px;
+    right: 15px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 300ms;
+}
+
+.product-box:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.product-box:hover p {
+    height: 40px;
+    margin-top: 30px;
+}
+
+.product-box:hover i {
+    transform: rotate(360deg);
+    box-shadow: 0 0 5px green;
+    
+}
+
+.product-box_image img{
+    width: 100%; 
+    height: 150px;        
+}
 
