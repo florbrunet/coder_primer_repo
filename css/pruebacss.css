@@ -1,0 +1,90 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  background-color: lightgray; }
+
+.cuadro {
+  width: 250px;
+  height: 320px;
+  background-color: white;
+  border-color: black;
+  margin-top: 20px;
+  margin-left: 20px;
+  color: black;
+  border-radius: 10px;
+  overflow: hidden; }
+  .cuadro :hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px 10px gray;
+    transition: all 0.5s; }
+
+.nombre {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: black;
+  font-family: 'Bebas Neue'; }
+
+.fotoauto {
+  width: 100%;
+  height: 70%; }
+
+.precio {
+  display: flex;
+  justify-content: center;
+  font-family: 'Bebas Neue'; }
+
+.comprar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: initial;
+  width: 250px;
+  height: 65px;
+  border: none;
+  background-color: gray;
+  font-size: 20px;
+  font-family: 'Bebas Neue';
+  cursor: pointer; }
+
+.cajas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 10px; }
+
+.caja-1 {
+  width: 200px;
+  height: 50px;
+  background-color: #5896aa; }
+
+.caja-2 {
+  width: 200px;
+  height: 50px;
+  background-color: #5896aa; }
+
+.caja-3 {
+  width: 200px;
+  height: 50px;
+  background-color: #5896aa; }
+
+.caja-4 {
+  width: 200px;
+  height: 50px;
+  background-color: #5896aa; }
+
+.publi-1, .publi-2 {
+  background-color: lightblue;
+  text-align: center; }
+
+.texto1 {
+  color: darkblue;
+  font-size: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+.texto2 {
+  color: blue;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }

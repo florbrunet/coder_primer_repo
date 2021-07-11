@@ -1,0 +1,106 @@
+$color_main: lightgray;
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw; 
+    background-color: $color_main;
+    
+}
+
+
+.cuadro {   
+    width: 250px;
+    height: 320px;
+    background-color: white;
+    border-color: black;
+    margin-top: 20px;
+    margin-left: 20px;
+    color: black;
+    border-radius: 10px;
+    overflow: hidden;
+    :hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 15px 10px gray;
+        transition: all 0.5s;
+    }
+}
+
+
+.nombre {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: black;
+    font-family: 'Bebas Neue';
+}
+
+.fotoauto {
+    width: 100%;
+    height: 70%;
+}
+
+.precio {
+    display: flex;
+    justify-content: center;
+    font-family: 'Bebas Neue';
+}
+
+.comprar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: initial;
+    width: 250px;
+    height: 65px;
+    border: none;
+    background-color: gray;
+    font-size: 20px;
+    font-family: 'Bebas Neue';
+    cursor: pointer;
+}
+
+.cajas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 10px;
+   
+}
+
+@for $i from 1 through 4{
+
+    .caja-#{$i}{
+        width: 200px;
+        height: 50px;
+        background-color: rgb(88, 150, 170);
+
+    }
+
+}
+
+.publi-1{
+    background-color: lightblue; 
+    text-align: center;
+}
+
+.publi-2{
+    @extend .publi-1;
+}
+
+@mixin mensaje($colorTexto, $tamanioTexto) {
+    color: $colorTexto;
+    font-size: $tamanioTexto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;    
+}
+
+.texto1{
+    @include mensaje(darkblue, 40px);
+}
+
+.texto2{
+    @include mensaje(blue, 30px);
+}
+
+
