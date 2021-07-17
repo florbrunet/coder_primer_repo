@@ -20,6 +20,7 @@ main {
     color: black;
     border-radius: 10px;
     overflow: hidden;
+
     :hover {
         transform: scale(1.1);
         box-shadow: 0 0 15px 10px gray;
@@ -75,6 +76,7 @@ main {
         width: 200px;
         height: 50px;
         background-color: rgb(88, 150, 170);
+        margin-top: 2%;
 
     }
 
@@ -83,24 +85,99 @@ main {
 .publi-1{
     background-color: lightblue; 
     text-align: center;
+    margin-top: 20%
 }
 
 .publi-2{
     @extend .publi-1;
 }
 
+.publi-3{
+    @extend .publi-1;
+}
+
+.publi-4{
+    @extend .publi-1;
+}
+
 @mixin mensaje($colorTexto, $tamanioTexto) {
     color: $colorTexto;
     font-size: $tamanioTexto;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;    
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    margin-left: 5%;
+
 }
 
 .texto1{
-    @include mensaje(darkblue, 40px);
+    @include mensaje(#0a7469, 30px);
 }
 
 .texto2{
-    @include mensaje(blue, 30px);
+    @include mensaje(#022b27, 20px);
 }
 
+.animate__animated{
+    margin-left: 5%;
+}
+
+.logo1{
+    padding-top: 10px;
+    color: #4BC6B9;
+    text-transform: lowercase;
+    font-family:cursive;
+    font-size: 25px;
+}
+
+@media only screen and (max-width: 600px){
+
+    main {
+        
+        flex-direction: column;
+    }
+
+    .cuadro {   
+        width: 400px;
+        height: 320px;
+        background-color: white;
+        border-color: black;
+        margin-top: 20px;
+        margin-left: 60px;
+        color: black;
+        border-radius: 10px;
+        overflow: hidden;
+    
+        :hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 15px 10px gray;
+            transition: all 0.5s;
+        }
+    }
+
+    .nombre {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        color: black;
+        font-family: 'Bebas Neue';
+    }
+    
+    .fotoauto {
+        width: 100%;
+        height: 70%;
+    }
+    
+    .precio {
+        display: flex;
+        justify-content: center;
+        font-family: 'Bebas Neue';
+    }
+    
+    .comprar {
+        width: 100%;
+       
+    }
+    
+
+
+}
 

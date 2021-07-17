@@ -123,6 +123,14 @@ header {
     text-transform: uppercase;
 }
 
+.logo1{
+    padding-top: 10px;
+    color: #4BC6B9;
+    text-transform: lowercase;
+    font-family:cursive;
+    font-size: 25px;
+}
+
 /***********************contenedor_Portada**********************************/
 
 
@@ -167,18 +175,17 @@ header {
     background: #222222;    
     grid-area: area1;
     width: 80%;
+    
 
 }
 
-#cajaDos{
-    background: blue;    
+#cajaDos{    
     grid-area: area2;
     width: 14.5%;      
     
 }
 
-#cajaTres{
-    background: purple;
+#cajaTres{    
     grid-area: area3;
     width: 90%;
     height: 60%;
@@ -192,8 +199,7 @@ header {
     justify-content: center; 
 }
 
-#cajaCuatro{ 
-    background: pink;
+#cajaCuatro{     
     width: 90%;
     height: 60%;
     justify-self: right;
@@ -201,8 +207,7 @@ header {
     grid-area: area5;     
 }
 
-#cajaCinco{  
-    background: red;     
+#cajaCinco{          
     grid-area: area7; 
     width: 90%;
     height: 60%;
@@ -211,25 +216,22 @@ header {
     
 }
 
-#cajaSeis{
-    background: red;   
+#cajaSeis{     
     grid-area: area4; 
-  
     
 }
 
 #cajaSiete{
-    background: green; 
+    
     grid-area: area6;   
 }
 
 #cajaOcho{
-    background: lightgray;   
+    
     grid-area: area8;
 }
 
-#cajaNueve{
-    background: orange;    
+#cajaNueve{        
     grid-area: area9;
     width: 100%;
 }
@@ -524,3 +526,25 @@ form {
     height: 150px;        
 }
 
+/*////////mediaquery//////*/
+@media only screen and (max-width: 600px){
+
+    .navBar, .searchContainer, .RegisButton, .logInButton {
+        visibility: hidden;
+    }
+
+    header {
+        background-color: black;
+        flex-direction: column;
+    }
+
+    .containerFooter{
+
+        flex-direction: column;
+
+    }
+
+
+
+    
+}
