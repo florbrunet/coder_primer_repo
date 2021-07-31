@@ -6,7 +6,7 @@ main {
   background-color: lightgray; }
 
 .cuadro {
-  width: 250px;
+  width: 300px;
   height: 320px;
   background-color: white;
   border-color: black;
@@ -41,8 +41,9 @@ main {
   justify-content: center;
   align-items: center;
   align-items: initial;
-  width: 250px;
+  width: px;
   height: 65px;
+  width: 100%;
   border: none;
   background-color: gray;
   font-size: 20px;
@@ -106,7 +107,15 @@ main {
   font-family: cursive;
   font-size: 25px; }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
+  /*////////mediaquery//////*/
+  .navBar, .searchContainer, .RegisButton, .logInButton {
+    visibility: hidden; }
+  header {
+    background-color: black;
+    flex-direction: column; }
+  .containerFooter {
+    flex-direction: column; }
   main {
     flex-direction: column; }
   .cuadro {
@@ -115,7 +124,7 @@ main {
     background-color: white;
     border-color: black;
     margin-top: 20px;
-    margin-left: 60px;
+    margin-left: 20px;
     color: black;
     border-radius: 10px;
     overflow: hidden; }

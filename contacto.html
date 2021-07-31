@@ -12,6 +12,7 @@
     <!--<meta name = "description" content="Cómo podemos ayudarte? Querés organizar un evento? Asistir a un evento?"-->
 </head>
 <body>
+    <div class="body_contacto">
 <header>
     <div class="headerLinks">
         <a href="./index.html">
@@ -20,9 +21,7 @@
         <a href="./index.html">
             menu
         </a>
-        <a href="./index.html">
-            foros
-        </a>
+        
     </div>
     <div class="searchContainer">
         <input class="searchBox" type="text">
@@ -43,48 +42,60 @@
     <a href="./menu/viajes.html">
         Viajes
     </a>
-    <a href="./index.html">
-        Deportes
-    </a>
-    <a href="./index.html">
-        Gratis
+    <a href="./pagedevelp.html">
+        Foros
     </a>
 </nav>               
-    <main>
+    <main class="contacto_container">
     <div class="contacto">
-        <h3> Formulario de contacto</h3>
+        <div class="contacto_formulario"> Formulario de contacto</div>
+       <br>
     <form action="contacto.html" method="">
-        <label for="nombre"></label>
-            <input type="text" id="nombre" placeholder="Cual es tu nombre?">
-            <br>
-        <label for="apellido"></label>
-            <input type="text" id="apellido" placeholder= "Cual es tu apellido">
-            <br>
-        <label for="email"></label>
-            <input type="email" id="email" placeholder="Escriba su email">
-            <br>
-        <label for="nombre">Porque que tema nos contacta?</label>
-            <br>
-        <select name="" id="">
-            <option value="">Quiero dar una charla</option>
-            <option value="">Quiero anotarme en una charla</option>
-            <option value="">Otros</option>
-        </select>
+        <div>
+            <label for="nombre"></label>
+                <input type="text" id="nombre" placeholder="Cual es tu nombre?">
+                <br>
+        </div>
+        <div>
+            <label for="apellido"></label>
+                <input type="text" id="apellido" placeholder= "Cual es tu apellido">
+                <br>
+        </div>
+        <div>
+            <label for="email"></label>
+                <input type="email" id="email" placeholder="Escriba su email">
+                <br>
+        </div>
+        <br>
+        <div class="">
+            <label for="nombre">Porque que tema nos contacta?</label>
+                <br>
+            <select name="" id="tema">
+                <option value="">Quiero dar una charla</option>
+                <option value="">Quiero anotarme en una charla</option>
+                <option value="">Otros</option>
+            </select>
+        </div>
         <br>
         <!--checkbox-->
-        <label for="texto">Que tema o temas te interesan?</label>
-            <br>
-            Ciencia y Tecnologia <input type="checkbox" name="Ciencua y Technologia">
-            Viajes <input type="checkbox" name="Viajes">
-            Musica <input type="checkbox" name="Musica">
-            Otro tema <input type="checkbox" name="Otro"> 
-            <br>
-        <label for="texto">Mensaje/Descripción</label>
+        <div>
+            <label for="texto">Que tema o temas te interesan?</label>
+                <br>
+                Ciencia y Tecnologia <input type="checkbox" name="Ciencua y Technologia">
+                Viajes <input type="checkbox" name="Viajes">
+                Musica <input type="checkbox" name="Musica">
+                Otro tema <input type="checkbox" name="Otro"> 
+                <br>
+        </div>
+        <br>
+        <div class="">
+            <label for="texto">Mensaje/Descripción</label>
             <br>
             <textarea name="" id="texto" cols="30" rows="10"></textarea>
             <br>        
-            <input type="submit" value="Enviar formulario">
-            <input type="reset" value="Resetear formulario">
+            <input id= "submitir" type="submit" value="Enviar formulario">
+            <input id = "resetear" type="reset" value="Resetear formulario">
+        </div>
         <br>                 
     </form> 
     </div>
@@ -110,6 +121,7 @@
         </div>
     </footer>
 </body>
+</div>
 
 </html>
 
